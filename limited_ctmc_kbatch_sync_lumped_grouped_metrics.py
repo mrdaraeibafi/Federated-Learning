@@ -213,7 +213,7 @@ class HeterogeneousLumpedKBatchSyncCTMC:
         for occ in per_group_occupancies:
             total_combinations *= len(occ)
         
-        progress = SimpleProgressBar(total=total_combinations, desc="Enumerating states", color='orange')
+        progress = SimpleProgressBar(total=total_combinations, desc=f"Enumerating-states-{self.b}-{self.B}-{self.K}", color='orange')
         
         for group_states in product(*per_group_occupancies):
             flat_state = tuple(value for g_state in group_states for value in g_state)
@@ -259,7 +259,7 @@ class HeterogeneousLumpedKBatchSyncCTMC:
         n_states = len(self.states)
         Q = np.zeros((n_states, n_states), dtype=float)
 
-        progress = SimpleProgressBar(total=n_states, desc="Building generator", color='blue')
+        progress = SimpleProgressBar(total=n_states, desc=f"Building-generator-{self.b}-{self.B}-{self.K}", color='blue')
 
         for row, state in enumerate(self.states):
             outgoing_rate = 0.0
@@ -319,7 +319,7 @@ class HeterogeneousLumpedKBatchSyncCTMC:
         # Show progress bar for building the system matrix
         progress = SimpleProgressBar(
             total=3,  # 3 steps: build, solve, post-process
-            desc="Solving stationary distribution",
+            desc=f"Solving-stationary-distribution-{self.b}-{self.B}-{self.K}",
             color='yellow',
             width=40
         )
@@ -370,7 +370,7 @@ class HeterogeneousLumpedKBatchSyncCTMC:
         utilization_mass = np.zeros(self.G, dtype=float)
         A = 0.0
 
-        progress = SimpleProgressBar(total=len(self.states), desc="Computing Palm metrics", color='magenta')
+        progress = SimpleProgressBar(total=len(self.states), desc=f"Computing-Palm-metrics-{self.b}-{self.B}-{self.K}", color='magenta')
         for idx, state in enumerate(self.states):
             progress.update()
             prob = pi[idx]
