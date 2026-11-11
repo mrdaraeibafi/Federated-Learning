@@ -1,0 +1,15 @@
+{
+  "dataset": "synthetic",
+  "rates": [
+    1.0
+  ],
+  "B": 1,
+  "K": 1,
+  "rounds": 100,
+  "batch_size": 32,
+  "lr": 0.05,
+  "seed": 42,
+  "deterministic": true,
+  "data_root": "./data",
+  "output": "check_single_worker"
+}

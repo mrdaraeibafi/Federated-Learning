@@ -1,0 +1,36 @@
+{"time": 0.0, "version": 0, "event": "start", "task_id": 0, "worker": 0, "duration": 1.0}
+{"time": 0.0, "version": 0, "event": "start", "task_id": 2, "worker": 1, "duration": 2.0}
+{"time": 0.0, "version": 0, "event": "start", "task_id": 4, "worker": 2, "duration": 10.0}
+{"time": 1.0, "version": 0, "event": "accept", "task_id": 0, "worker": 0, "count": 1}
+{"time": 1.0, "version": 0, "event": "start", "task_id": 1, "worker": 0, "duration": 1.0}
+{"time": 2.0, "version": 0, "event": "accept", "task_id": 2, "worker": 1, "count": 2}
+{"time": 2.0, "version": 0, "event": "start", "task_id": 3, "worker": 1, "duration": 2.0}
+{"time": 2.0, "version": 0, "event": "accept", "task_id": 1, "worker": 0, "count": 3}
+{"time": 2.0, "version": 0, "event": "global_update", "task_id": null, "worker": null, "contributions": [2, 1, 0]}
+{"time": 2.0, "version": 0, "event": "cancel_running", "task_id": 3, "worker": 1}
+{"time": 2.0, "version": 0, "event": "cancel_running", "task_id": 4, "worker": 2}
+{"time": 2.0, "version": 0, "event": "cancel_queued", "task_id": 5, "worker": 2}
+{"time": 2.0, "version": 1, "event": "start", "task_id": 6, "worker": 0, "duration": 1.0}
+{"time": 2.0, "version": 1, "event": "start", "task_id": 3, "worker": 1, "duration": 2.0}
+{"time": 2.0, "version": 1, "event": "start", "task_id": 4, "worker": 2, "duration": 10.0}
+{"time": 3.0, "version": 1, "event": "accept", "task_id": 6, "worker": 0, "count": 1}
+{"time": 3.0, "version": 1, "event": "start", "task_id": 7, "worker": 0, "duration": 1.0}
+{"time": 4.0, "version": 1, "event": "accept", "task_id": 3, "worker": 1, "count": 2}
+{"time": 4.0, "version": 1, "event": "start", "task_id": 8, "worker": 1, "duration": 2.0}
+{"time": 4.0, "version": 1, "event": "accept", "task_id": 7, "worker": 0, "count": 3}
+{"time": 4.0, "version": 1, "event": "global_update", "task_id": null, "worker": null, "contributions": [2, 1, 0]}
+{"time": 4.0, "version": 1, "event": "cancel_running", "task_id": 8, "worker": 1}
+{"time": 4.0, "version": 1, "event": "cancel_running", "task_id": 4, "worker": 2}
+{"time": 4.0, "version": 1, "event": "cancel_queued", "task_id": 5, "worker": 2}
+{"time": 4.0, "version": 2, "event": "start", "task_id": 9, "worker": 0, "duration": 1.0}
+{"time": 4.0, "version": 2, "event": "start", "task_id": 8, "worker": 1, "duration": 2.0}
+{"time": 4.0, "version": 2, "event": "start", "task_id": 4, "worker": 2, "duration": 10.0}
+{"time": 5.0, "version": 2, "event": "accept", "task_id": 9, "worker": 0, "count": 1}
+{"time": 5.0, "version": 2, "event": "start", "task_id": 10, "worker": 0, "duration": 1.0}
+{"time": 6.0, "version": 2, "event": "accept", "task_id": 8, "worker": 1, "count": 2}
+{"time": 6.0, "version": 2, "event": "start", "task_id": 11, "worker": 1, "duration": 2.0}
+{"time": 6.0, "version": 2, "event": "accept", "task_id": 10, "worker": 0, "count": 3}
+{"time": 6.0, "version": 2, "event": "global_update", "task_id": null, "worker": null, "contributions": [2, 1, 0]}
+{"time": 6.0, "version": 2, "event": "cancel_running", "task_id": 11, "worker": 1}
+{"time": 6.0, "version": 2, "event": "cancel_running", "task_id": 4, "worker": 2}
+{"time": 6.0, "version": 2, "event": "cancel_queued", "task_id": 5, "worker": 2}

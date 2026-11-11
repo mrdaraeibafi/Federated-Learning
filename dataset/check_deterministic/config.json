@@ -1,0 +1,17 @@
+{
+  "dataset": "synthetic",
+  "rates": [
+    1.0,
+    0.5,
+    0.1
+  ],
+  "B": 2,
+  "K": 3,
+  "rounds": 3,
+  "batch_size": 32,
+  "lr": 0.05,
+  "seed": 42,
+  "deterministic": true,
+  "data_root": "./data",
+  "output": "check_deterministic"
+}

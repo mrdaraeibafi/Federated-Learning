@@ -1,0 +1,44 @@
+[
+  {
+    "round": 0,
+    "time": 0.0,
+    "loss": 1.0986119508743286,
+    "accuracy": 0.398333340883255
+  },
+  {
+    "round": 1,
+    "time": 2.0,
+    "contributions": [
+      2,
+      1,
+      0
+    ],
+    "canceled": 3,
+    "loss": 1.0799404382705688,
+    "accuracy": 0.7350000143051147
+  },
+  {
+    "round": 2,
+    "time": 4.0,
+    "contributions": [
+      2,
+      1,
+      0
+    ],
+    "canceled": 3,
+    "loss": 1.0616627931594849,
+    "accuracy": 0.82833331823349
+  },
+  {
+    "round": 3,
+    "time": 6.0,
+    "contributions": [
+      2,
+      1,
+      0
+    ],
+    "canceled": 3,
+    "loss": 1.0457558631896973,
+    "accuracy": 0.8666666746139526
+  }
+]

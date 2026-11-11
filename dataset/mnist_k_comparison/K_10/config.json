@@ -1,0 +1,28 @@
+{
+  "dataset": "mnist",
+  "rates": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    0.7,
+    0.7,
+    0.7,
+    0.7,
+    0.3,
+    0.3
+  ],
+  "B": 1,
+  "K": 10,
+  "K_values": null,
+  "rounds": 200,
+  "batch_size": 32,
+  "lr": 0.05,
+  "seed": 42,
+  "deterministic": false,
+  "data_root": "./data",
+  "output": "mnist_k_comparison/K_10",
+  "target_loss": 0.5,
+  "baseline_K": null,
+  "plot_only": false
+}

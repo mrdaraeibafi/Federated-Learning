@@ -1,0 +1,20 @@
+\begin{table}[t]
+\centering
+\caption{Parametric Sweep: CTMC vs. SimPy Comparison}
+\label{tab:parametric_sweep}
+\begin{tabular}{lccccccc}
+\toprule
+\textbf{Family} & $K$ & $A_{\text{CTMC}}$ & $A_{\text{SimPy}}$ & $\beta^2_{\text{bias,CTMC}}$ & $\beta^2_{\text{bias,SimPy}}$ & $\text{MSE}_{\text{CTMC}}$ & $\text{MSE}_{\text{SimPy}}$ \\
+\midrule
+K-Sync (b=1,B=1) & 1 & 11.5000 & 10.9821 & 0.08064 & 0.09291 & 0.00048 & 0.00097 \\
+K-Sync (b=1,B=1) & 5 & 1.6233 & 1.6503 & 0.03900 & 0.03582 & 0.00010 & 0.00006 \\
+K-Sync (b=1,B=1) & 9 & 0.4330 & 0.4427 & 0.00328 & 0.00328 & 0.00004 & 0.00004 \\
+K-Batch-Sync (b=3,B=1) & 1 & 11.5000 & 11.0598 & 0.08064 & 0.08320 & 0.00044 & 0.00090 \\
+K-Batch-Sync (b=3,B=1) & 5 & 2.1355 & 2.2102 & 0.06223 & 0.06509 & 0.00009 & 0.00008 \\
+K-Batch-Sync (b=3,B=1) & 9 & 0.6679 & 0.6654 & 0.00585 & 0.00617 & 0.00004 & 0.00004 \\
+K-Batch-Sync (b=3,B=3) & 1 & 11.5000 & 11.6031 & 0.08064 & 0.09059 & 0.00057 & 0.00087 \\
+K-Batch-Sync (b=3,B=3) & 13 & 0.8072 & 0.8118 & 0.06072 & 0.05726 & 0.00003 & 0.00003 \\
+K-Batch-Sync (b=3,B=3) & 24 & 0.2861 & 0.2873 & 0.01441 & 0.01482 & 0.00001 & 0.00001 \\
+\bottomrule
+\end{tabular}
+\end{table}

@@ -1,0 +1,69 @@
+{
+  "aggregation_rate": 0.6870726047917813,
+  "config": {
+    "B": 3,
+    "K": 10,
+    "N": [
+      4,
+      3,
+      3
+    ],
+    "a": [
+      1.0,
+      1.5,
+      2.0
+    ],
+    "b": 3,
+    "c": [
+      1.0,
+      -1.0,
+      3.0
+    ],
+    "eta": 0.05,
+    "modes": [
+      "ideal",
+      "mean"
+    ],
+    "mu": [
+      1.2,
+      0.6,
+      0.2
+    ],
+    "n_aggregations": 60,
+    "n_trajectories": 200,
+    "seed": 42,
+    "sigma": [
+      0.2,
+      0.3,
+      0.4
+    ],
+    "theta0": -2.0
+  },
+  "final_statistics": {
+    "ideal": {
+      "final_mean_mse": 0.00144088747831994,
+      "final_mean_theta": 1.1711299214504414,
+      "final_sem_mse": 6.937413469310365e-05,
+      "final_std_mse": 0.0009810984216088504
+    },
+    "mean": {
+      "final_mean_mse": 0.38648522646405326,
+      "final_mean_theta": 0.5853264549567393,
+      "final_sem_mse": 0.0010283330360474515,
+      "final_std_mse": 0.014542825262146068
+    }
+  },
+  "group_weights": [
+    0.4,
+    0.3,
+    0.3
+  ],
+  "mean_aggregation_interval": 1.455450258132548,
+  "participation_mean": [
+    0.6533647491719153,
+    0.2593455369598858,
+    0.08728971386819051
+  ],
+  "theta_mean_induced": 0.6475834205016927,
+  "theta_star": 1.206896551724138
+}

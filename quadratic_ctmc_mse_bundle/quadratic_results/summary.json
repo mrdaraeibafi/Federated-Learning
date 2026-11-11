@@ -1,0 +1,97 @@
+{
+  "config": {
+    "groups": [
+      [
+        2,
+        1.0
+      ],
+      [
+        2,
+        0.5
+      ]
+    ],
+    "configurations": [
+      {
+        "K": 1,
+        "B": 1,
+        "J": 1
+      },
+      {
+        "K": 2,
+        "B": 1,
+        "J": 1
+      },
+      {
+        "K": 4,
+        "B": 1,
+        "J": 1
+      }
+    ],
+    "a": 1.0,
+    "eta": 0.1,
+    "sigma2": 1.0,
+    "m": 4,
+    "theta0": 2.0,
+    "theta_star": 0.0,
+    "rounds": 100,
+    "time_horizon": 60.0,
+    "time_points": 241,
+    "replications": 1000,
+    "seed": 1234,
+    "initial_system": "stationary",
+    "plot_rate_approximation": false
+  },
+  "results": [
+    {
+      "configuration": {
+        "K": 1,
+        "B": 1,
+        "J": 1
+      },
+      "b": 1,
+      "states": 1,
+      "aggregation_rate": 3.0,
+      "aggregate_noise_var": 0.25,
+      "exact_mse_floor": 0.013157894736842111,
+      "dutta_mse_floor": 0.025,
+      "max_bound_violation": 0.0,
+      "generator_row_error": 0.0
+    },
+    {
+      "configuration": {
+        "K": 2,
+        "B": 1,
+        "J": 1
+      },
+      "b": 1,
+      "states": 3,
+      "aggregation_rate": 1.25,
+      "aggregate_noise_var": 0.125,
+      "exact_mse_floor": 0.006578947368421056,
+      "dutta_mse_floor": 0.0125,
+      "max_bound_violation": 0.0,
+      "generator_row_error": 0.0
+    },
+    {
+      "configuration": {
+        "K": 4,
+        "B": 1,
+        "J": 1
+      },
+      "b": 1,
+      "states": 8,
+      "aggregation_rate": 0.30303030303030304,
+      "aggregate_noise_var": 0.0625,
+      "exact_mse_floor": 0.003289473684210528,
+      "dutta_mse_floor": 0.00625,
+      "max_bound_violation": 0.0,
+      "generator_row_error": 0.0
+    }
+  ],
+  "notes": [
+    "Single global learner; shared optimum; independent additive Gaussian noise; no staleness.",
+    "CI: pointwise normal approximation across independent replications, not a simultaneous band.",
+    "Time simulation uses CTMC completion channels, not independent DES validation.",
+    "Dutta assumes M_G=0; sigma2 is per-sample variance; m is NOT b=BJ."
+  ]
+}
